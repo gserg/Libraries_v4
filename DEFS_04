@@ -1,0 +1,24 @@
+# this is my PC version
+
+FC = gfortran
+
+HOME = C:\oleg
+LIBDIR   = C:\oleg\T\LIBS_04
+BINDIR   = C:\oleg\BIN 
+ 
+comp  = -c -O2 -I. -I${LIBDIR} 
+compL = -c -O2  -J${LIBDIR}
+link = -O2 -I. -I${LIBDIR}
+
+ARCH     = ar
+ARCHFLAGS= rv
+RANLIB   = ranlib
+
+ZCOM    = ${LIBDIR}\libzcom.a
+ZCONFLS = ${LIBDIR}\libzconfLS.a
+RADIAL  = ${LIBDIR}\libradial.a
+BS      = ${LIBDIR}\libBS.a
+SHELLS  = ${LIBDIR}\libshells.a
+
+LAPACK = ${LIBDIR}\liblapack.a ${LIBDIR}\librefblas.a
+
