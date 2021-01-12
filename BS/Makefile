@@ -41,7 +41,7 @@ O = $(S:.f90=.o)
 $(N).a : $(O)
 	ar rv $(N).a $(O)
 	mv $(N).a $(LIBDIR)
-#	rm *.o 
+	rm *.o 
  
 clean:
 	rm -f *.o  *~
